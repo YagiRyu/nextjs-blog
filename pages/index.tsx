@@ -6,14 +6,14 @@ import Link from 'next/link';
 import Date from '../components/date';
 import { GetStaticProps } from 'next';
 
-export async function getStaticProps(): GetStaticProps {
+export const getStaticProps: GetStaticProps = async () => {
   const allPostsData = getSortedPostsData();
   return {
     props: {
       allPostsData,
     },
   };
-}
+};
 
 export default function Home({
   allPostsData,
