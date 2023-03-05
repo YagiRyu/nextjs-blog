@@ -1,19 +1,12 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
+import Header from './header';
 
 const name = 'Ryutaro Yagi';
 export const siteTitle = 'Ryutaro Yagi';
 
-export default function Layout({
-  children,
-  home,
-}: {
-  children: React.ReactNode;
-  home?: boolean;
-}) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className='flex items-center flex-col justify-center px-4 py-0 mb-24 mx-auto text-white h-screen'>
+    <div className='h-screen'>
       <Head>
         <link rel='icon' href='/favicon.ico' />
         <meta
@@ -29,47 +22,10 @@ export default function Layout({
         <meta name='og:title' content={siteTitle} />
         <meta name='twitter:card' content='summary_large_image' />
       </Head>
-      <header className='flex items-center flex-col'>
-        {home ? (
-          <>
-            <Image
-              priority
-              src='/images/sun.jpg'
-              className='rounded-t-full rounded-b-full'
-              height={200}
-              width={200}
-              alt=''
-            />
-            <h1 className='text-[#E90064] md:text-5xl font-extrabold tracking-tighter mt-4 mx-0 mb-8 text-3xl'>
-              Hi! I'm Ryutaro Yagi👋
-            </h1>
-          </>
-        ) : (
-          <>
-            <Link href='/'>
-              <Image
-                priority
-                src='/images/sun.jpg'
-                className='rounded-t-full rounded-b-full'
-                height={108}
-                width={108}
-                alt=''
-              />
-            </Link>
-            <h2 className='text-2xl my-4 mx-0'>
-              <Link href='/' className='text-inherit'>
-                {name}
-              </Link>
-            </h2>
-          </>
-        )}
-      </header>
-      <main>{children}</main>
-      {!home && (
-        <div className='mt-12 mx-0 mb-0'>
-          <Link href='/'>← Back to home</Link>
-        </div>
-      )}
+      <Header />
+      <main className='flex items-center flex-col justify-center px-4 py-0 mb-24 mx-auto text-white'>
+        {children}
+      </main>
     </div>
   );
 }
