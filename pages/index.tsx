@@ -15,11 +15,22 @@ export const getStaticProps: GetStaticProps = async () => {
 
 export default function Home() {
   return (
-    <Layout home>
+    <Layout>
       <Head>
         <title>{siteTitle}</title>
       </Head>
       <section className='text-xl flex items-center flex-col justify-center'>
+        <Image
+          priority
+          src='/images/sun.jpg'
+          className='rounded-t-full rounded-b-full'
+          height={200}
+          width={200}
+          alt=''
+        />
+        <h1 className='text-[#E90064] md:text-5xl font-extrabold tracking-tighter mt-4 mx-0 mb-8 text-3xl'>
+          Hi! I'm Ryutaro Yagi👋
+        </h1>
         <p className='font-bold'>
           I'm a software engineer in Japan\uD83C\uDDEF\uD83C\uDDF5
         </p>
