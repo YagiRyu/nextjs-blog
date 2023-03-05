@@ -29,7 +29,9 @@ export default function Blog({
         <ul className='p-0 m-0 list-none'>
           {allPostsData.map(({ id, title, date }) => (
             <li className='mt-0 mx-0 mb-5' key={id}>
-              <Link href={`/posts/${id}`}>{title}</Link>
+              <Link href={`/posts/${id}`} className='font-bold'>
+                {title}
+              </Link>
               <br />
               <small className='text-[#666]'>
                 <Date dateString={date} />
