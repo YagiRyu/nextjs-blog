@@ -6,7 +6,7 @@ export const siteTitle = 'Ryutaro Yagi';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <>
+    <div className='h-screen'>
       <Head>
         <link rel='icon' href='/favicon.ico' />
         <meta
@@ -23,9 +23,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <meta name='twitter:card' content='summary_large_image' />
       </Head>
       <Header />
-      <main className='flex items-center flex-col justify-center px-4 py-0 mb-24 mx-auto text-white h-screen'>
+      <main className='flex items-center flex-col justify-center px-4 py-0 mb-24 mx-auto text-white'>
         {children}
       </main>
-    </>
+    </div>
   );
 }

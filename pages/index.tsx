@@ -19,7 +19,7 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className='text-xl flex items-center flex-col justify-center'>
+      <section className='text-xl flex items-center flex-col justify-center mt-11'>
         <Image
           priority
           src='/images/sun.jpg'
@@ -35,12 +35,44 @@ export default function Home() {
           I'm a software engineer in Japan\uD83C\uDDEF\uD83C\uDDF5
         </p>
         <p className='font-bold'>
-          I mainly develop Android applications and I'm also interested in
-          developing iOS applications\uD83E\uDDD1\uD83C\uDFFB
+          I mainly develop Android applications\uD83E\uDDD1\uD83C\uDFFB
         </p>
         <p className='font-bold'>
-          I love Kotlin and mobile app development\uD83D\uDC9A
+          I am interested in cross-platform application development👀
         </p>
+        <div className='mt-5 text-sm'>
+          <p className='md:text-base'>
+            2001{' '}
+            <span className='ml-5 md:text-lg text-base'>Born in Nagasaki.</span>
+          </p>
+          <p className='md:text-base'>
+            2020{' '}
+            <span className='ml-5 md:text-lg text-base'>
+              Graduated from Nagasaki Nihon University High School.
+            </span>
+          </p>
+          <p className='md:text-base'>
+            2020{' '}
+            <span className='ml-5 md:text-lg text-base'>
+              Entered Nihon University.
+            </span>
+          </p>
+          <p className='md:text-base'>
+            2021 <span className='ml-5 md:text-lg text-base'>42Tokyo</span>
+          </p>
+          <p className='md:text-base'>
+            2021{' '}
+            <span className='ml-5 md:text-lg text-base'>
+              Android engineer at ALC, Inc.
+            </span>
+          </p>
+          <p className='md:text-base'>
+            2022{' '}
+            <span className='ml-5 md:text-lg text-base'>
+              Android Engineer at CyberAgent Inc. (AbemaTV Inc.)
+            </span>
+          </p>
+        </div>
       </section>
       <section className='flex items-center justify-center mt-7'>
         <a href='https://twitter.com/yagiryuuu'>
