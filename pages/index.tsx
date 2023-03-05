@@ -38,9 +38,10 @@ export default function Home() {
           I mainly develop Android applications\uD83E\uDDD1\uD83C\uDFFB
         </p>
         <p className='font-bold'>
-          I am interested in cross-platform application development👀
+          I'm interested in cross-platform application development👀
         </p>
-        <div className='mt-5 text-sm'>
+        <div className='mt-7 text-sm'>
+          <h3 className='text-3xl mb-3 text-[#DDAA00] text-center'>Career</h3>
           <p className='md:text-base'>
             2001{' '}
             <span className='ml-5 md:text-lg text-base'>Born in Nagasaki.</span>
@@ -70,6 +71,21 @@ export default function Home() {
             2022{' '}
             <span className='ml-5 md:text-lg text-base'>
               Android Engineer at CyberAgent Inc. (AbemaTV Inc.)
+            </span>
+          </p>
+        </div>
+        <div className='mt-9 text-sm'>
+          <h3 className='text-3xl mb-3 text-[#DDAA00] text-center'>Personal</h3>
+          <p className='md:text-base'>
+            Hobby{' '}
+            <span className='ml-5 md:text-lg text-base'>
+              Watching dramas (especially Korean ones) and listening to K-POP🇰🇷
+            </span>
+          </p>
+          <p className='md:text-base'>
+            Develop{' '}
+            <span className='ml-5 md:text-lg text-base'>
+              Kotlin, Swift, C, TypeScript
             </span>
           </p>
         </div>

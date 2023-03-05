@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Header: React.FC = () => (
   <header className='flex justify-around items-center w-full py-5 bg-[#3d3d3d]'>
-    <h3 className='text-white font-bold md:text-3xl text-2xl text-[#DDAA00]'>
+    <h3 className='font-bold md:text-3xl text-2xl text-[#DDAA00]'>
       Ryutaro Yagi
     </h3>
     <div className=''>
